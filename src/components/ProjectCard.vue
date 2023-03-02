@@ -40,9 +40,9 @@ export default {
 
             </div>
             <div class="card-footer">
-              <p >
-                {{ project.technologies }}
-              </p>
+              <span v-for="technology in project.technologies">
+                #{{ technology.name }}
+              </span>
             </div>
           </div>
         </div>
