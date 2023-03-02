@@ -28,15 +28,15 @@ export default {
           </h1>
         </div>
       </div>
-      <div class="row">
-        <div class="col-5 d-flex justify-content-between" v-for="project in store.projects">
+      <div class="row d-flex justify-content-between">
+        <div class="col-5 mb-4" v-for="project in store.projects">
           <div class="card">
             <div class="card-header">{{ project.date }} --- {{ project.type.type }}</div>
             <img class="card-img-top" :src="project.image" alt="{{ project.title }}">
             <div class="card-body">
               <h5 class="card-title">{{ project.title }}</h5>
               <p class="card-text">{{ project.content.substr(0, 200) }}...</p>
-              <a href="#" class="btn btn-primary">Show</a>
+              <a href="#" class="btn btn-success">Read more...</a>
 
             </div>
             <div class="card-footer">
