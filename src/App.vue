@@ -1,15 +1,17 @@
 <script>
-import AppMain from './components/AppMain.vue';
+import ProjectCard from './components/ProjectCard.vue';
 import axios from 'axios';
+import { store } from './store.js';
 
 export default {
   name: 'App',
   components: {
-    AppMain
+    ProjectCard
   },
   data() {
     return {
-
+      projects: [],
+      store,
     }
   },
   methods: {
@@ -19,14 +21,12 @@ export default {
 
         }
       })
-        .then(function (response) {
-          console.log(response.data.results.data);
+        .then((response) => {
+          console.log(response.data.results.data)
+          this.store.projects = response.data.results.data;
         })
         .catch(function (error) {
           console.log(error);
-        })
-        .finally(function () {
-          // always executed
         });
     }
   },
@@ -38,7 +38,7 @@ export default {
 
 <template>
   <main>
-    <AppMain />
+    <ProjectCard />
   </main>
 </template>
 
