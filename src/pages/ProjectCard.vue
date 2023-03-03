@@ -31,12 +31,12 @@ export default {
       <div class="row d-flex justify-content-between">
         <div class="col-5 mb-4" v-for="project in store.projects">
           <div class="card">
-            <div class="card-header">{{ project.date }} --- {{ project.type.type }}</div>
+            <div class="card-header">{{ project.author }} / {{ project.date }} ({{ project.type.type }})</div>
             <img class="card-img-top" :src="project.image" alt="{{ project.title }}">
             <div class="card-body">
               <h5 class="card-title">{{ project.title }}</h5>
               <p class="card-text">{{ project.content.substr(0, 200) }}...</p>
-              <a href="#" class="btn btn-success">Read more...</a>
+              <router-link :to="{name: 'singleProject', params: {slug: project.slug}}" class="btn btn-success">Read more...</router-link>
 
             </div>
             <div class="card-footer">
