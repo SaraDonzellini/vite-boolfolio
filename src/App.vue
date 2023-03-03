@@ -22,7 +22,6 @@ export default {
         }
       })
         .then((response) => {
-          console.log(response.data.results.data)
           this.store.projects = response.data.results.data;
         })
         .catch(function (error) {
