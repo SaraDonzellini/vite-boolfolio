@@ -1,12 +1,12 @@
 <script>
-import ProjectCard from './components/ProjectCard.vue';
+import AppHeader from './components/AppHeader.vue';
 import axios from 'axios';
 import { store } from './store.js';
 
 export default {
   name: 'App',
   components: {
-    ProjectCard
+    AppHeader
   },
   data() {
     return {
@@ -38,7 +38,8 @@ export default {
 
 <template>
   <main>
-    <ProjectCard />
+    <AppHeader />
+    <router-link ></router-link>
   </main>
 </template>
 
