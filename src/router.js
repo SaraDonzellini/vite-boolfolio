@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 
 import HomePage from './pages/HomePage.vue';
 import ProjectCard from './pages/ProjectCard.vue';
-import HomePage from './pages/HomePage.vue';
+import AboutUs from './pages/AboutUs.vue';
 
 const router = createRouter({
   history: createWebHistory(),
@@ -23,4 +23,6 @@ const router = createRouter({
       component: AboutUs
     },
   ]
-})
+});
+
+export { router };

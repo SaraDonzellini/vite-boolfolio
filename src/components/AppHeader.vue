@@ -26,13 +26,13 @@ export default {
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <router-link :to='{name: home}' class="nav-link">Home</router-link>
+                  <router-link :to="{name : 'home'}" class="nav-link">Home</router-link>
                 </li>
                 <li class="nav-item">
-                  <router-link :to='{name: projects}' class="nav-link">Projects</router-link>
+                  <router-link :to="{name : 'projects'}" class="nav-link">Projects</router-link>
                 </li>              
                 <li class="nav-item">
-                  <router-link :to='{name: aboutus}' class="nav-link">About us</router-link>
+                  <router-link :to="{name : 'aboutus'}" class="nav-link">About us</router-link>
                 </li>
               </ul>
               <!-- <form class="d-flex" role="search">

@@ -3,7 +3,7 @@ import { store } from '../store.js';
 
 
 export default {
-  name: 'AppMain',
+  name: 'ProjectCard',
   data() {
     return {
       store,

@@ -37,10 +37,10 @@ export default {
 </script>
 
 <template>
-  <main>
-    <AppHeader />
-    <router-link ></router-link>
-  </main>
+  <AppHeader />
+
+  <router-view></router-view>
+
 </template>
 
 <style lang="scss">

@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: 'HomePage'
+  name: 'AboutUs'
 }
 </script>
 
@@ -8,15 +8,13 @@ export default {
   <section class="container">
     <div class="row">
       <div class="col-12">
-        <h1>
-          Welcome to the Homepage of my projects
+        <h1>About Us</h1>
 
-        </h1>
       </div>
     </div>
   </section>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
   
 </style>
