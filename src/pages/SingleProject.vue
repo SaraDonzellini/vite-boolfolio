@@ -44,18 +44,18 @@ export default {
       <div class="row d-flex justify-content-center">
         <div class="col-12 mb-4">
           <div class="card">
-            <div class="card-header">{{ project.author }} / {{ project.date }}</div>
+            <div class="card-header">{{ project.author }} / {{ project.date }} ({{ project.type.type }})</div>
             <img class="card-img-top" :src="project.image" :alt="project.title">
             <div class="card-body">
               <h5 class="card-title">{{ project.title }}</h5>
               <p class="card-text">{{ project.content }}</p>
 
             </div>
-            <!-- <div class="card-footer">
+            <div class="card-footer">
                   <span v-for="technology in project.technologies">
                     #{{ technology.name }}
                   </span>
-                </div> -->
+                </div>
           </div>
         </div>
       </div>
